@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>badge, tooltip, progress</title>
+     <!-- font-awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- bootstrap cdn-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- badge -->
+    Bootstrap video <span class="badge bg-secondary rounded-pill">New</span>
+
+    <button class="btn btn-primary">
+        Download
+        <span class="badge bg-secondary rounded-pill">New</span>
+    </button>
+
+    <!-- tooltip -->
+    <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Click here to submit">
+        Submit
+    </button>
+
+    <!-- progress -->
+    <div class="progress mt-3">
+        <div class="progress-bar bg-primary w-25" role="progressbar" aria-valuenow="25" aria-valuemax="100">
+
+        </div>
+    </div>
+    
+    <!-- Float clearfix SVG icon -->
+    <div class="mt-3 clearfix">
+        <div id="left-div" class="bg-primary float-start w-50">
+            <h2>Left Div</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, corrupti eum accusamus consequuntur numquam ut excepturi dolores qui laudantium, quas ullam dicta dolorum facilis assumenda explicabo dolor tempore perferendis? Cumque.</p>
+        </div>
+    
+        <div id="right-div" class="bg-secondary float-end w-25">
+            <h2>Right Div</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, corrupti eum accusamus consequuntur numquam ut excepturi dolores qui laudantium, quas ullam dicta dolorum facilis assumenda explicabo dolor tempore perferendis? Cumque.</p>
+        </div>
+
+        <div class="bg-success">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel molestiae optio dicta voluptatem in voluptatibus similique aut asperiores illum. Porro labore accusamus soluta sunt impedit consequuntur doloremque excepturi enim?
+            </p>
+        </div>
+
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+              </svg>
+            Clock
+        </button>
+    </div>
+
+        <!-- display and position -->
+
+        <!-- //display:none, block, inline, inline-block, flex, grid, table -->
+
+        <button class="d-block">Click me 1</button>
+        <button class="d-block">Click me 2</button>
+
+        <div class="bg-primary d-inline-block"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas excepturi vero sint molestiae, labore ea unde autem eligendi atque eum est laboriosam. Ullam beatae voluptatum alias eius explicabo, neque autem.</p></div>
+        <div class="bg-secondary d-inline-block"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sunt expedita ad, ab magni quia porro reprehenderit obcaecati esse ipsa maxime voluptate earum quae. Magni asperiores ut accusantium fugiat sint.</p></div>
+
+        <!-- positioning:static, fixed, sticky, absolute, relative -->
+
+        <div class="bg-success mt-3 position-relative top-50 start-0" style="height: 200px;">
+            <button class="position-absolute start-50 top-50 translate-middle">
+                Click me
+            </button>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium tempore quos optio vero, in placeat voluptates doloremque, consequuntur quod illo quisquam, mollitia vel! Dolorum consequatur nemo est vero aut fugit doloribus quas ullam reiciendis, natus nam deserunt asperiores commodi veniam laudantium? Quia aspernatur laboriosam nisi labore magnam deleniti ratione deserunt tempore impedit autem, porro nostrum sint ducimus ea assumenda? Neque reiciendis consectetur cupiditate itaque facere ipsa, illo error quod sint unde aspernatur ducimus tempora iure vero cumque officiis! Ipsa magnam suscipit voluptates modi molestias aliquid, dolor perferendis deserunt consequuntur beatae libero enim laborum placeat dolores vitae labore eligendi maiores totam, cum rem quibusdam. Sint labore vero, sed ducimus voluptas distinctio sapiente mollitia minus repellendus ad, vel, aliquam accusantium quos porro itaque debitis. Consequuntur corrupti eveniet sapiente officiis at illo enim error animi placeat, libero quod itaque iure facilis voluptates! Saepe quia ex delectus sunt fugit fugiat. Animi quis dolore a distinctio aperiam nesciunt rem quas optio! Amet nisi quibusdam molestias nam ab hic laudantium similique quasi quidem, enim non et dolores eligendi vero, obcaecati dignissimos eveniet laborum corporis repellendus quae, quas accusantium consequuntur! Voluptatibus pariatur facere corrupti nam delectus cupiditate aperiam animi asperiores, molestiae perferendis ratione? Est aliquid voluptas soluta eius ipsam itaque fugiat, illo ratione qui aut consequatur libero aspernatur. Velit reprehenderit sapiente repudiandae labore mollitia eveniet. Sint, modi numquam? Ab deserunt officia eius accusamus ducimus aperiam magnam nulla corporis, nobis itaque qui, dolorem, molestiae obcaecati debitis placeat numquam vitae totam rem dolorum quos perspiciatis! Facilis numquam veniam, placeat provident voluptatum maiores itaque fugit hic! Sequi, non dicta. Ducimus, molestias commodi amet, recusandae delectus provident magnam numquam possimus blanditiis deserunt ea cupiditate dolore! Itaque eveniet rerum voluptate quibusdam possimus perferendis veniam provident impedit ex aut ea maiores dicta voluptatem facilis, maxime quia officia rem odio veritatis sunt, natus exercitationem quo. Ducimus quidem quo esse recusandae rerum voluptates omnis vero ex ullam dolore, obcaecati modi maiores mollitia nam consectetur, dolorem fuga debitis ea architecto itaque corporis nostrum veritatis. Veritatis, iusto. Harum officiis assumenda aperiam ex cupiditate at? Impedit consequatur, fuga doloremque magni molestias voluptas! Deserunt sequi ipsum repellendus laudantium mollitia illum officiis aperiam earum praesentium! Similique at dolore, dicta dolor, hic, laborum eos a quis nihil provident eum excepturi? Enim autem, deserunt ipsa exercitationem quod ducimus cupiditate nobis maiores, facilis repudiandae quo distinctio, reiciendis perspiciatis voluptates repellendus atque. Ut, id reprehenderit? Ut architecto distinctio repellendus animi atque? Minus accusamus debitis optio explicabo cumque asperiores et minima doloribus suscipit rerum, eos nesciunt quis quisquam modi corporis distinctio enim? Exercitationem tenetur animi consectetur dolorum harum cum optio, maxime, officiis porro aperiam nostrum accusantium quidem vel dignissimos nam repudiandae expedita facere! Numquam asperiores dolorum ex accusamus quis, debitis fugiat, autem voluptate cumque voluptatem modi dignissimos esse nesciunt similique laborum velit iusto sunt consectetur, blanditiis ut? Rerum facilis obcaecati doloribus. Earum, magni aperiam ab consequuntur vero eius eveniet assumenda possimus. Natus eligendi iste totam quibusdam vitae sapiente doloremque possimus nulla similique? Doloremque sint repellendus, nulla sed sunt sequi placeat minima itaque atque quibusdam, incidunt aliquid quod magni officiis hic. Voluptates in cum iste ipsum! Facere accusamus officia facilis quaerat obcaecati mollitia unde quae aut repudiandae corrupti deleniti, rerum, sunt omnis officiis voluptates quos dolore distinctio dolorum sit illum. Architecto corrupti voluptatem tenetur saepe voluptates non rerum voluptas, quam earum, fuga possimus? Odio perferendis quaerat cupiditate laboriosam. Facilis ratione, vitae fuga voluptate aut quos eveniet accusantium officiis eum, consequatur, voluptatem eaque accusamus quia praesentium excepturi. Repudiandae enim omnis iste accusantium repellendus numquam, officiis ex! Aspernatur magnam odio eaque similique in, tempore ratione commodi. Pariatur tempore veritatis aliquid assumenda obcaecati nihil animi sit placeat ipsa numquam ipsam provident, ex deleniti molestias ullam qui iure? Odit repellendus nulla praesentium, non labore provident aliquid quibusdam unde quos dicta in error a vel blanditiis autem delectus, quo harum est? Corporis sequi perferendis nobis inventore voluptas! Nesciunt repellendus, optio voluptates unde cumque laboriosam doloremque delectus, autem hic incidunt natus. Eius eum odit tenetur tempora? Expedita, provident repudiandae inventore est quos corporis ipsum. Voluptates, error vel laudantium exercitationem aspernatur nam voluptas quos soluta eligendi! Ullam itaque omnis ab veniam ducimus, eum nam quibusdam, nesciunt quos optio dolore doloribus voluptatem alias! Maxime cupiditate officiis quod, eum numquam praesentium ipsum nulla ipsam. Molestiae sed doloremque placeat illo fugiat hic a deleniti accusantium quo, nisi laudantium est similique aperiam ex impedit culpa iste ipsa quia amet fugit eligendi exercitationem rerum commodi. Maiores alias error, vitae a debitis quasi ex reiciendis est at consequatur autem sed. Officiis doloremque sint quisquam id, iure debitis nemo molestiae est vitae aliquid nostrum cupiditate aperiam accusamus deserunt, praesentium beatae? Ipsa, incidunt tenetur? Ipsum harum ut praesentium voluptatibus? Et ducimus molestias, molestiae excepturi, voluptate eum repudiandae nesciunt, cum eaque modi perferendis ea. Aperiam quasi voluptatum quaerat culpa nulla, atque dolorem nam quam harum tenetur eum animi voluptatem unde suscipit hic quos quidem blanditiis ullam dolore! Laborum tempore dolor doloribus consequatur! Molestiae quia aliquid eius dicta dolorum pariatur eligendi nisi sequi nemo, porro voluptatibus maiores eveniet reprehenderit. Facilis nulla aperiam nam aut sequi qui quisquam. Magni perferendis optio enim dolor, explicabo perspiciatis iusto debitis, odio odit suscipit accusantium a architecto, recusandae officiis quam omnis maiores cupiditate laborum. Assumenda molestias excepturi odio? Sed expedita ipsa eos dolor vitae iste ex quia, autem accusamus consequatur quam quibusdam dolores atque voluptatem ut architecto minima perspiciatis qui, minus fugiat quisquam aspernatur. Dolorem, doloremque nulla quibusdam expedita a libero placeat dolores. Saepe facilis alias quae maxime magnam excepturi, dolorum deleniti reprehenderit quas unde beatae quod voluptatem, expedita aut nulla ipsam ullam. Explicabo cupiditate dicta accusantium ut alias impedit consequuntur, praesentium itaque dolore voluptate ea, repellendus officia deserunt ratione quidem nihil amet odit quas. Harum veritatis delectus commodi blanditiis inventore, tenetur nobis atque? Maxime fugiat aut ratione error esse enim iure reprehenderit ut dignissimos recusandae! Doloribus quia excepturi odit asperiores rerum magni fuga nisi laudantium consequatur eaque tempore similique nesciunt dolorum consectetur aut iusto fugiat blanditiis enim commodi earum ipsum beatae, dicta cumque! Consectetur tempora quibusdam quod quos, quae odit asperiores rem! Ipsum laboriosam consequatur placeat.
+            </p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+</body>
+</html>
